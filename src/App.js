@@ -27,7 +27,7 @@ class App extends Component{
     render(){
       return(
         <div>
-          <img src={this.state.picture} width="120px" alt="gender"/>
+          {!this.state.picture ? <p>Loading...</p> : <img src={this.state.picture} width="120px" alt="gender"/>}
           <h2>{this.state.name}</h2>
           <h2>{this.state.surName}</h2>
           <p>{this.state.email}</p>
